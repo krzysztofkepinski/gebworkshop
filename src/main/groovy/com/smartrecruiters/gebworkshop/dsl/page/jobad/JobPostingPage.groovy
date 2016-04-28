@@ -4,7 +4,7 @@ import geb.Page
 
 
 class JobPostingPage extends Page {
-    static url = "https://www.smartrecruiters.com/smartrecruiters/89636157-quality-engineer"
+    static url = ""
 
     static at = {
         applyButton.isDisplayed()
