@@ -6,6 +6,8 @@ import geb.spock.GebSpec
 
 class ApplyManuallyTest extends GebSpec {
 
+    def candidate
+
     def "should open job posting page"() {
         given:
             to JobPostingPage
@@ -17,5 +19,14 @@ class ApplyManuallyTest extends GebSpec {
             JobPostingPage.with {
                 applyModal.isDisplayed()
             }
+    }
+
+    def "candidate should apply"() {
+        given:
+            to JobPostingPage
+        when:
+            JobPostingPage.applyManually(candidate)
+        then:
+            true
     }
 }
