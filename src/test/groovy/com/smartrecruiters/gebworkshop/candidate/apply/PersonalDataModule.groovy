@@ -24,7 +24,7 @@ class PersonalDataModule extends Module{
         emailInput << email
     }
 
-    def fillInPersonalData(personalData){
+    def fillInPersonalData(PersonalData personalData){
         enterFirstName(personalData.firstName)
         enterLastName(personalData.lastName)
         enterEmail(personalData.email)
