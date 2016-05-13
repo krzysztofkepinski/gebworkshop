@@ -5,6 +5,8 @@ import geb.Module
 /**
  * Created by krzysztofkepinski on 06/05/16.
  */
+
+
 class PersonalDataModule extends Module{
     static content = {
         firstNameInput { $("#js-first-name-edit")}
@@ -22,10 +24,12 @@ class PersonalDataModule extends Module{
         emailInput << email
     }
 
-    def fillInPersonalData(PersonalData personalData){
+    def fillInPersonalData(personalData){
         enterFirstName(personalData.firstName)
         enterLastName(personalData.lastName)
         enterEmail(personalData.email)
     }
+
+
 
 }
